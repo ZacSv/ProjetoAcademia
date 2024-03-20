@@ -1,0 +1,216 @@
+﻿@page
+@model ProjetoSiteAcademia.Views.Treinos.TreinoCModel
+@{
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="@Url.Content("~/css/StylesTreinos")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/responsive.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/reset.css")" />
+    <link rel="shortcut icon" href="./assets/icoPage.png" type="image/x-icon" />
+    <title>Treino A</title>
+</head>
+<body>
+    <main>
+        <div class="card" id="card">
+            <a class="voltar" href="index.html">
+                <img src="./assets/arrow-small-left (1).png" alt="botao-voltar" />
+            </a>
+
+            <h2 class="titulo-card" id="titulo-card">Treino C - Pernas e Ombros</h2>
+            <section class="botoes-card">
+                <button class="botao-abrir" data-target="supino">
+                    Banco Adutor
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="supinoInclinado">
+                    Cadeira Extensora
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="supinoHalteres">
+                    Leg Press
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaScott">
+                    Elevação Frontal
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaMartelo">
+                    Elevação Lateral
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaAlternada">
+                    Encolhimento
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+            </section>
+        </div>
+    </main>
+    <div class="modal-container" id="modal-supino">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-supino">
+                <button class="icone-fechar" data-target="supino">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/pernas/banco-adutor.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Banco Adutor</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/legs.png" alt="icone-pernas" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-supinoInclinado">
+        <div class="card-modal">
+            <div class="botao-fechar" data-target="fechar-supinoInclinado">
+                <button class="icone-fechar" data-target="supinoInclinado">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/pernas/cadeira-extensora.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Cadeira Extensora</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/legs.png" alt="icone-pernas" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-supinoHalteres">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-supinoHalteres">
+                <button class="icone-fechar" data-target="supinoHalteres">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/pernas/leg-press.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Leg Press</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/legs.png" alt="icone-pernas" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaScott">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaScott">
+                <button class="icone-fechar" data-target="roscaScott">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/pernas/elevacao-frontal.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Elevação Frontal</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/shoulder.png" alt="icone-ombros" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaMartelo">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaMartelo">
+                <button class="icone-fechar" data-target="roscaMartelo">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/pernas/elevacao-lateral.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Elevação Lateral</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/shoulder.png" alt="icone-ombro" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaAlternada">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaAlternada">
+                <button class="icone-fechar" data-target="roscaAlternada">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/pernas/encolhimento.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Encolhimento de Ombros</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/shoulder.png" alt="icone-ombro" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

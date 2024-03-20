@@ -1,8 +1,70 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@page
+@model ProjetoSiteAcademia.Views.Home.IndexModel
+@{
 }
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="@Url.Content("~/css/responsive.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/reset.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/styles.css")" />
+    <link rel="shortcut icon" href="./assets/icoPage.png" type="image/x-icon" />
+    <title>Treinos</title>
+</head>
+<body>
+    <div class="card-inicial">
+        <main>
+            <h1 class="principal__text">Vai treinar o que ?</h1>
+            <img class="img-principal"
+                 src="@Url.Content("~/Assets/academia.png")"
+                 alt="card-principal" />
+        </main>
+        <nav class="nav link__treinos">
+            <div class="icon icon__chest">
+                <section class="text">
+                    <a class="text__icon" href="@Url.Action("TreinoA", "Treinos")">
+                       Treino A
+                        <h3 class="desc__icon">Bíceps + Peito</h3>
+                    </a>
+                </section>
+                <section class="icon__img">
+                    <img src="@Url.Content("~/Assets/Icons/arms.png")" />
+                </section>
+                <section class="icon__img">
+                    <img src="@Url.Content("~/Assets/Icons/chest.png")" />
+                </section>
+            </div>
+            <div class="icon icon__back">
+                <section class="text">
+                    <a class="text__icon" href="./treinoB.html">
+                        Treino B
+                        <h3 class="desc__icon">Costa + Tríceps</h3>
+                    </a>
+                </section>
+                <section class="icon__img">
+                    <img src="@Url.Content("~/Assets/Icons/back.png")" />
+                </section>
+                <section class="icon__img">
+                    <img src="@Url.Content("~/Assets/Icons/triceps.png")" />
+                </section>
+            </div>
+            <div class="icon icon__leg">
+                <section class="text">
+                    <a class="text__icon" href="./treinoC.html">
+                        Treino C
+                        <h3 class="desc__icon">Pernas + Ombro</h3>
+                    </a>
+                </section>
+                <section class="icon__img">
+                    <img src="@Url.Content("~/Assets/Icons/legs.png")" />
+                </section>
+                <section class="icon__img">
+                    <img src="@Url.Content("~/Assets/Icons/shoulder.png")" />
+                </section>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>

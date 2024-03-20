@@ -1,0 +1,52 @@
+﻿body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    float: left;
+    width: 100%;
+}
+
+.button-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    height: 30rem;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    border: 3px solid #f18604;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-image: url("../Assets/Teste.png");
+    background-repeat: repeat;
+    background-size: 100px 50px;
+    background-size: cover;
+    background-position:right;
+    gap: 12px;
+   
+}
+
+.btn {
+    background-color: #f18604;
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+.tittle_button{
+    color: red;
+}

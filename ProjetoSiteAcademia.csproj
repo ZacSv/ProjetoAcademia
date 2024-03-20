@@ -6,4 +6,50 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="public\NovaPasta\**" />
+    <Compile Remove="Views\NovaPasta\**" />
+    <Content Remove="public\NovaPasta\**" />
+    <Content Remove="Views\NovaPasta\**" />
+    <EmbeddedResource Remove="public\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\NovaPasta\**" />
+    <None Remove="public\NovaPasta\**" />
+    <None Remove="Views\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Treinos\Teste.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Treinos\Teste.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Assets\academia.png" />
+    <None Include="wwwroot\Assets\Icons\arms.png" />
+    <None Include="wwwroot\Assets\Icons\botao-voltar.png" />
+    <None Include="wwwroot\Assets\Icons\back.png" />
+    <None Include="wwwroot\Assets\Icons\chest.png" />
+    <None Include="wwwroot\Assets\Icons\close.png" />
+    <None Include="wwwroot\Assets\Icons\icoPage.png" />
+    <None Include="wwwroot\Assets\Icons\legs.png" />
+    <None Include="wwwroot\Assets\Icons\pattern-background.jpg" />
+    <None Include="wwwroot\Assets\Icons\pattern-card.jpg" />
+    <None Include="wwwroot\Assets\Icons\searching.png" />
+    <None Include="wwwroot\Assets\Icons\shoulder.png" />
+    <None Include="wwwroot\Assets\Icons\triceps.png" />
+    <None Include="wwwroot\Assets\Login.jpg" />
+  </ItemGroup>
+
 </Project>

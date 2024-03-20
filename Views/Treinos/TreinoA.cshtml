@@ -1,0 +1,214 @@
+﻿@page
+@model ProjetoSiteAcademia.Views.Treinos.TreinoAModel
+@{
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="@Url.Content("~/css/StylesTreino.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/responsive.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/reset.css")" />
+    <link rel="shortcut icon" href="./assets/icoPage.png" type="image/x-icon" />
+    <title>Treino A</title>
+</head>
+<body>
+    <main>
+        <div class="card" id="card">
+            <a class="voltar" href="@Url.Action("Index", "Home")">
+                <img src="@Url.Content("~/Assets/Icons/botao-voltar.png")" alt="botao-voltar" />
+            </a>
+
+            <h2 class="titulo-card" id="titulo-card">Treino A - Peito e Biceps</h2>
+            <section class="botoes-card">
+                <button class="botao-abrir" data-target="supino">
+                    Supino Reto
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="Icone-Lupa" />
+                </button>
+                <button class="botao-abrir" data-target="supinoInclinado">
+                    Supino Inclinado
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="Icone-Lupa" />
+                </button>
+                <button class="botao-abrir" data-target="supinoHalteres">
+                    Supino com Halteres
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="Icone-Lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaScott">
+                    Rosca Scott
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="Icone-Lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaMartelo">
+                    Rosca Martelo
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="Icone-Lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaAlternada">
+                    Rosca Alternada
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="Icone-Lupa" />
+                </button>
+            </section>
+        </div>
+    </main>
+    <div class="modal-container" id="modal-supino">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-supino">
+                <button class="icone-fechar" data-target="supino">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio" src="@Url.Content("~/Assets/ExemplosExercicios/peito-biceps/supino.gif")" alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Supino Reto</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="@Url.Content("~/Assets/Icons/chest.png")" alt="icone-peito")" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-supinoInclinado">
+        <div class="card-modal">
+            <div class="botao-fechar" data-target="fechar-supinoInclinado">
+                <button class="icone-fechar" data-target="supinoInclinado">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="@Url.Content("~/Assets/ExemplosExercicios/peito-biceps/supinoHI.gif")"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Supino Inclinado</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="@Url.Content("~/Assets/Icons/chest.png")" alt="icone-peito")" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-supinoHalteres">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-supinoHalteres">
+                <button class="icone-fechar" data-target="supinoHalteres">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="@Url.Content("~/Assets/ExemplosExercicios/peito-biceps/supinoH.gif")"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Supino Halteres</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="@Url.Content("~/Assets/Icons/chest.png")" alt="icone-peito" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaScott">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaScott">
+                <button class="icone-fechar" data-target="roscaScott">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="@Url.Content("/wwwroot/Assets/ExemplosExercicios/peito-biceps/scott.gif")"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Rosca Scott</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="@Url.Content("/wwwroot/Assets/Icons/arms.png")" alt="icone-braco" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaMartelo">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaMartelo">
+                <button class="icone-fechar" data-target="roscaMartelo">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="@Url.Content("/wwwroot/Assets/ExemplosExercicios/peito-biceps/martelo.gif")"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Rosca Martelo</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="@Url.Content("/wwwroot/Assets/Icons/arms.png")" alt="icone-braco" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaAlternada">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaAlternada">
+                <button class="icone-fechar" data-target="roscaAlternada">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="@Url.Content("~/Assets/ExemplosExercicios/peito-biceps/roscaAlternada.gif")"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Rosca Alternada</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                    <img src="@Url.Content("/wwwroot/Assets/Icons/arms.png.png")" alt="icone-braco" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

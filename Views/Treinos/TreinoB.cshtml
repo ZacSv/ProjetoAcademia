@@ -1,0 +1,218 @@
+﻿@page
+@model ProjetoSiteAcademia.Views.Treinos.TreinoBModel
+@{
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="@Url.Content("~/css/StylesTreinos")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/responsive.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/reset.css")" />
+    <link rel="shortcut icon" href="./assets/icoPage.png" type="image/x-icon" />
+    <title>Treino A</title>
+</head>
+<body>
+    <main>
+        <div class="card" id="card">
+            <a class="voltar" href="index.html">
+                <img src="./assets/arrow-small-left (1).png" alt="botao-voltar" />
+            </a>
+
+            <h2 class="titulo-card" id="titulo-card">
+                Treino B - Costas e Tríceps
+            </h2>
+            <section class="botoes-card">
+                <button class="botao-abrir" data-target="supino">
+                    Remada Curva
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="supinoInclinado">
+                    Remada Serrote
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="supinoHalteres">
+                    Remada Triângulo
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaScott">
+                    Tríceps Polia
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaMartelo">
+                    Tríceps Corda
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+                <button class="botao-abrir" data-target="roscaAlternada">
+                    Tríceps Testa
+                    <img src="./assets/searching.png" alt="icon-lupa" />
+                </button>
+            </section>
+        </div>
+    </main>
+    <div class="modal-container" id="modal-supino">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-supino">
+                <button class="icone-fechar" data-target="supino">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/costas/remada-curva.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Remada Curva</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/back.png" alt="icone-costas" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-supinoInclinado">
+        <div class="card-modal">
+            <div class="botao-fechar" data-target="fechar-supinoInclinado">
+                <button class="icone-fechar" data-target="supinoInclinado">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/costas/remada-serrote.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Remada Serrote</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x10</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/back.png" alt="icone-costas" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-supinoHalteres">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-supinoHalteres">
+                <button class="icone-fechar" data-target="supinoHalteres">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/costas/remada-triangulo.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Remada no Triângulo</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/back.png" alt="icone-costas" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaScott">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaScott">
+                <button class="icone-fechar" data-target="roscaScott">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/costas/triceps polia.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Tríceps na Polia</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/triceps.png" alt="icone-triceps" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaMartelo">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaMartelo">
+                <button class="icone-fechar" data-target="roscaMartelo">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/costas/triceps-cord.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Tríceps Corda</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/triceps.png" alt="icone-triceps" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="modal-container" id="modal-roscaAlternada">
+        <div class="card-modal">
+            <div class="botao-fechar" id="fechar-roscaAlternada">
+                <button class="icone-fechar" data-target="roscaAlternada">X</button>
+            </div>
+            <section class="conteudo-card">
+                <img class="img-exercicio"
+                     src="./assets/exercicios/costas/triceps-testa-inclinado.gif"
+                     alt="" />
+                <div class="informacoes-card">
+                    <h1 class="titulo-exercicio">Tríceps Testa</h1>
+                    <h2 class="qtd-repeticoes">Repetições: 3x10</h2>
+                    <div class="grupo-muscular">
+                        <h2>Grupo muscular</h2>
+                        <img src="./assets/triceps.png" alt="icone-triceps" />
+                    </div>
+
+                    <h2 class="dicas-exercicios">
+                        Dicas: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Natus nobis facilis, tempore at doloribus molestias nostrum iure
+                        eligendi ut earum culpa molestiae quaerat velit eaque voluptas
+                        facere? Officia, odit itaque.
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

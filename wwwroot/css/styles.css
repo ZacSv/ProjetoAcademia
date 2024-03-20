@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400;700&family=Ubuntu:wght@400;500&display=swap");
+
+:root {
+    --cor-principal: #525fe1;
+    --cor-contraste: #3644df;
+    --cor-padrao: black;
+    --cor-secundaria: #FF8C00;
+    --cor-neutra: #ffffff;
+    --fonte-principal: "Ubuntu", sans-serif;
+    --degrade-padrao: linear-gradient(90deg, #00c3f3, #006dec, #0044bf);
+}
+
+body {
+  height: 100vh;
+  width: 100vh;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  font-family: var(--fonte-principal);
+  padding: 25px;
+  align-items: center;
+  
+}
+
+.img-principal {
+  margin-top: 5%;
+  max-width: 50%;
+}
+
+.principal__text {
+    justify-content: center;
+    font-size: 1.8rem;
+    color: gold;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 10px gray;
+    padding: 1rem;
+    height: 4rem;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 12px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  padding: 30px;
+}
+
+.link__treinos {
+  gap: 1rem;
+}
+
+.icon {
+  font-family: var(--fonte-principal);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 12px;
+  border: solid 2px var(--cor-secundaria);
+  padding: 1.5rem;
+  width: 6.2rem;
+}
+
+.desc__icon {
+  color: var(--cor-padrao);
+}
+
+.text__icon {
+  color: var(--cor-neutra);
+  font-size: 1.2rem;
+}
+
+.icon__img {
+  background-color: var(--cor-secundaria);
+  border-radius: 40%;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc__icon {
+  font-size: 0.6rem;
+}
