@@ -7,17 +7,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="@Url.Content("~/css/StylesTreinos")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/StylesTreino.css")" />
     <link rel="stylesheet" href="@Url.Content("~/css/responsive.css")" />
     <link rel="stylesheet" href="@Url.Content("~/css/reset.css")" />
     <link rel="shortcut icon" href="./assets/icoPage.png" type="image/x-icon" />
-    <title>Treino A</title>
+    <title>Treino B</title>
 </head>
 <body>
     <main>
         <div class="card" id="card">
-            <a class="voltar" href="index.html">
-                <img src="./assets/arrow-small-left (1).png" alt="botao-voltar" />
+             <a class="voltar" href="@Url.Action("Index", "Home")">
+                <img src="@Url.Content("~/Assets/Icons/botao-voltar.png")" alt="botao-voltar" />
             </a>
 
             <h2 class="titulo-card" id="titulo-card">
@@ -26,46 +26,44 @@
             <section class="botoes-card">
                 <button class="botao-abrir" data-target="supino">
                     Remada Curva
-                    <img src="./assets/searching.png" alt="icon-lupa" />
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="icon-lupa" />
                 </button>
                 <button class="botao-abrir" data-target="supinoInclinado">
                     Remada Serrote
-                    <img src="./assets/searching.png" alt="icon-lupa" />
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="icon-lupa" />
                 </button>
                 <button class="botao-abrir" data-target="supinoHalteres">
                     Remada Triângulo
-                    <img src="./assets/searching.png" alt="icon-lupa" />
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="icon-lupa" />
                 </button>
                 <button class="botao-abrir" data-target="roscaScott">
                     Tríceps Polia
-                    <img src="./assets/searching.png" alt="icon-lupa" />
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="icon-lupa" />
                 </button>
                 <button class="botao-abrir" data-target="roscaMartelo">
                     Tríceps Corda
-                    <img src="./assets/searching.png" alt="icon-lupa" />
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="icon-lupa" />
                 </button>
                 <button class="botao-abrir" data-target="roscaAlternada">
                     Tríceps Testa
-                    <img src="./assets/searching.png" alt="icon-lupa" />
+                    <img src="@Url.Content("~/Assets/Icons/searching.png")" alt="icon-lupa" />
                 </button>
             </section>
         </div>
     </main>
-    <div class="modal-container" id="modal-supino">
+    <div class="modal-container" id="modal-supino">""
         <div class="card-modal">
             <div class="botao-fechar" id="fechar-supino">
                 <button class="icone-fechar" data-target="supino">X</button>
             </div>
             <section class="conteudo-card">
-                <img class="img-exercicio"
-                     src="./assets/exercicios/costas/remada-curva.gif"
-                     alt="" />
+                <img class="img-exercicio" src="@Url.Content("~/Assets/ExemplosExercicios/costas-triceps/remada-curva.gif")" alt="" />
                 <div class="informacoes-card">
                     <h1 class="titulo-exercicio">Remada Curva</h1>
                     <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
                     <div class="grupo-muscular">
                         <h2>Grupo muscular</h2>
-                        <img src="./assets/back.png" alt="icone-costas" />
+                        <img src="@Url.Content("~/Assets/Icons/back.png")" alt="icone-costas")" />
                     </div>
 
                     <h2 class="dicas-exercicios">
@@ -84,15 +82,13 @@
                 <button class="icone-fechar" data-target="supinoInclinado">X</button>
             </div>
             <section class="conteudo-card">
-                <img class="img-exercicio"
-                     src="./assets/exercicios/costas/remada-serrote.gif"
-                     alt="" />
+                <img class="img-exercicio" src="@Url.Content("~/Assets/ExemplosExercicios/costas-triceps/remada-serrote.gif")" alt="" />
                 <div class="informacoes-card">
                     <h1 class="titulo-exercicio">Remada Serrote</h1>
                     <h2 class="qtd-repeticoes">Repetições: 3x10</h2>
                     <div class="grupo-muscular">
                         <h2>Grupo muscular</h2>
-                        <img src="./assets/back.png" alt="icone-costas" />
+                        <img src="@Url.Content("~/Assets/Icons/back.png")" alt="icone-costas")" />
                     </div>
 
                     <h2 class="dicas-exercicios">
@@ -111,15 +107,13 @@
                 <button class="icone-fechar" data-target="supinoHalteres">X</button>
             </div>
             <section class="conteudo-card">
-                <img class="img-exercicio"
-                     src="./assets/exercicios/costas/remada-triangulo.gif"
-                     alt="" />
+                <img class="img-exercicio" src="@Url.Content("~/Assets/ExemplosExercicios/costas-triceps/remada-triangulo.gif")" alt="" />
                 <div class="informacoes-card">
                     <h1 class="titulo-exercicio">Remada no Triângulo</h1>
                     <h2 class="qtd-repeticoes">Repetições: 3x12</h2>
                     <div class="grupo-muscular">
                         <h2>Grupo muscular</h2>
-                        <img src="./assets/back.png" alt="icone-costas" />
+                         <img src="@Url.Content("~/Assets/Icons/back.png")" alt="icone-costas")" />
                     </div>
 
                     <h2 class="dicas-exercicios">
@@ -138,15 +132,13 @@
                 <button class="icone-fechar" data-target="roscaScott">X</button>
             </div>
             <section class="conteudo-card">
-                <img class="img-exercicio"
-                     src="./assets/exercicios/costas/triceps polia.gif"
-                     alt="" />
+                <img class="img-exercicio" src="@Url.Content("~/Assets/ExemplosExercicios/costas-triceps/triceps-polia.gif")" alt="" />
                 <div class="informacoes-card">
                     <h1 class="titulo-exercicio">Tríceps na Polia</h1>
                     <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
                     <div class="grupo-muscular">
                         <h2>Grupo muscular</h2>
-                        <img src="./assets/triceps.png" alt="icone-triceps" />
+                         <img src="@Url.Content("~/Assets/Icons/triceps.png")" alt="icone-costas")" />
                     </div>
 
                     <h2 class="dicas-exercicios">
@@ -165,15 +157,13 @@
                 <button class="icone-fechar" data-target="roscaMartelo">X</button>
             </div>
             <section class="conteudo-card">
-                <img class="img-exercicio"
-                     src="./assets/exercicios/costas/triceps-cord.gif"
-                     alt="" />
+                <img class="img-exercicio" src="@Url.Content("~/Assets/ExemplosExercicios/costas-triceps/triceps-cord.gif")" alt="" />
                 <div class="informacoes-card">
                     <h1 class="titulo-exercicio">Tríceps Corda</h1>
                     <h2 class="qtd-repeticoes">Repetições: 3x15</h2>
                     <div class="grupo-muscular">
                         <h2>Grupo muscular</h2>
-                        <img src="./assets/triceps.png" alt="icone-triceps" />
+                        <img src="@Url.Content("~/Assets/Icons/triceps.png")" alt="icone-costas")" />
                     </div>
 
                     <h2 class="dicas-exercicios">
@@ -192,15 +182,13 @@
                 <button class="icone-fechar" data-target="roscaAlternada">X</button>
             </div>
             <section class="conteudo-card">
-                <img class="img-exercicio"
-                     src="./assets/exercicios/costas/triceps-testa-inclinado.gif"
-                     alt="" />
+                <img class="img-exercicio" src="@Url.Content("~/Assets/ExemplosExercicios/costas-triceps/triceps-testa-inclinado.gif")" alt="" />
                 <div class="informacoes-card">
                     <h1 class="titulo-exercicio">Tríceps Testa</h1>
                     <h2 class="qtd-repeticoes">Repetições: 3x10</h2>
                     <div class="grupo-muscular">
                         <h2>Grupo muscular</h2>
-                        <img src="./assets/triceps.png" alt="icone-triceps" />
+                        <img src="@Url.Content("~/Assets/Icons/triceps.png")" alt="icone-costas")" />
                     </div>
 
                     <h2 class="dicas-exercicios">
