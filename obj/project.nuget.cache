@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zhwP75Bf80MfIF0CTgoNTtVp9/eB5MmFK2EZV9V1gumtfi4y8nOYuZTG7pn8jPiDwEBe++1NHbrakozkBcdeuA==",
+  "dgSpecHash": "RnFcGOS9E4TR0DiNtxKV8mOC0Cumxr7Dww4TbfkVLVvkz2U3kG6fJBLF23qSdDrRHwGZ+TQVOOsI8JQ4u+o2sw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj",
+  "projectFilePath": "C:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isacv\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\isacv\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
