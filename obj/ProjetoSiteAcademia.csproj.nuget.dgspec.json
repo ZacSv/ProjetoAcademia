@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj": {}
+    "c:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj": {
+    "c:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj",
+        "projectUniqueName": "c:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj",
         "projectName": "ProjetoSiteAcademia",
-        "projectPath": "C:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj",
+        "projectPath": "c:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\ProjetoSiteAcademia.csproj",
         "packagesPath": "C:\\Users\\isacv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\obj\\",
+        "outputPath": "c:\\Users\\isacv\\OneDrive\\Área de Trabalho\\Academia\\ProjetoSiteAcademia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\isacv\\AppData\\Roaming\\NuGet\\NuGet.Config"
