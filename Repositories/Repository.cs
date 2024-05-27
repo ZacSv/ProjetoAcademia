@@ -1,4 +1,5 @@
-﻿namespace ProjetoSiteAcademia.Repositories
+﻿using Oracle.ManagedDataAccess;
+namespace ProjetoSiteAcademia.Repositories
 {
     public class Repository
     {
