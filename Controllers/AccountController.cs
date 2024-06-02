@@ -6,9 +6,13 @@ namespace ProjetoSiteAcademia.Controllers
     public class AccountController : Controller
     {
         private readonly IUserService _userService;
+        private readonly ILoginService _loginService;
 
-        public AccountController(IUserService userService)
-            => _userService = userService;
+        public AccountController(IUserService userService, ILoginService loginService)
+        {
+            _userService = userService;
+            _loginService = loginService;
+        }
 
         [HttpGet]
         public IActionResult Register()
@@ -53,6 +57,19 @@ namespace ProjetoSiteAcademia.Controllers
             }
             return View();
 
+        }
+
+        public ActionResult Login(UserModel user)
+        {
+            if (_loginService.LoginUser(user))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                ModelState.AddModelError("", "Email ou senha inválido");
+                return View();
+            }
         }
     }
 }

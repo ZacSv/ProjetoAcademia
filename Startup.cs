@@ -16,6 +16,7 @@ namespace ProjetoSiteAcademia
         {
             services.AddControllersWithViews();
             services.AddTransient<IUserService, UserService>(); //Registrando serviço para criação do usuário
+            services.AddTransient<ILoginService, LoginService>();  //Registrando serviço para login do usuário
         }
 
         // Este método é chamado durante a execução. Use este método para configurar o pipeline de requisição.
