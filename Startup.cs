@@ -15,7 +15,7 @@ namespace ProjetoSiteAcademia
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<IUserService, UserService>(); //Registrando serviço para criação do usuário
+            services.AddTransient<IUserService, UserService>(); //Registrando serviço para criação do usuário
         }
 
         // Este método é chamado durante a execução. Use este método para configurar o pipeline de requisição.

@@ -16,6 +16,12 @@ namespace ProjetoSiteAcademia.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public ActionResult Register(UserModel user)
@@ -26,19 +32,14 @@ namespace ProjetoSiteAcademia.Controllers
                 usuario.USERNAME = user.USERNAME;
                 usuario.EMAIL = user.EMAIL;
                 usuario.PASSWORD = user.PASSWORD;
-                Console.WriteLine(user);
                 try
                 {
                     if (ModelState.IsValid)
                     {
-                        Console.WriteLine(usuario);
                         _userService.CreateUser(usuario);
-                        ViewBag.NAME = user.USERNAME;
-                        ViewBag.EMAIL = user.EMAIL;
-                        ViewBag.PASSWORD = user.PASSWORD;
                     }
 
-                    return View(user);
+                    return View("Login");
                 }
                 catch (Exception ex)
                 {
