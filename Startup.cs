@@ -1,53 +1,46 @@
-﻿namespace ProjetoSiteAcademia.Views
+﻿using ProjetoSiteAcademia.Services;
+
+namespace ProjetoSiteAcademia
 {
-    using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Hosting;
-    using ProjetoSiteAcademia.Controllers;
-    using ProjetoSiteAcademia.Data;
-
-
-        public class Startup
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
         {
-            public Startup(IConfiguration configuration)
-            {
-                Configuration = configuration;
-            }
-
-            public IConfiguration Configuration { get; }
-
-            // Este método é chamado durante a execução. Use este método para adicionar serviços ao contêiner.
-            public void ConfigureServices(IServiceCollection services)
-            {
-
-            // Outros serviços podem ser adicionados aqui
+            Configuration = configuration;
         }
 
-            // Este método é chamado durante a execução. Use este método para configurar o pipeline de requisição.
-            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-            {
-                if (env.IsDevelopment())
-                {
-                    app.UseDeveloperExceptionPage();
-                }
-                else
-                {
-                    // Configurações para ambientes de produção
-                    // Exemplo: app.UseExceptionHandler("/Home/Error");
-                }
+        public IConfiguration Configuration { get; }
 
-                // Configurações adicionais do pipeline podem ser adicionadas aqui
-
-                app.UseRouting();
-
-                app.UseEndpoints(endpoints =>
-                {
-                    // Configuração de endpoints (rotas) para a aplicação
-                    // Exemplo: endpoints.MapControllerRoute(...)
-                });
-            }
+        // Este método é chamado durante a execução. Use este método para adicionar serviços ao contêiner.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllersWithViews();
+            services.AddScoped<IUserService, UserService>(); //Registrando serviço para criação do usuário
         }
+
+        // Este método é chamado durante a execução. Use este método para configurar o pipeline de requisição.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                // Configurações para ambientes de produção
+                // Exemplo: app.UseExceptionHandler("/Home/Error");
+            }
+
+            // Configurações adicionais do pipeline podem ser adicionadas aqui
+
+            app.UseRouting();
+            app.UseStaticFiles();
+
+            app.UseEndpoints(endpoints =>
+            {
+                // Configuração de endpoints (rotas) para a aplicação
+                // Exemplo: endpoints.MapControllerRoute(...)
+            });
+        }
+    }
 }

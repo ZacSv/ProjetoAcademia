@@ -1,4 +1,3 @@
-using ProjetoSiteAcademia.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,3 +25,4 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Home}/{id?}");
 
 app.Run();
+
